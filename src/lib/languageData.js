@@ -1,5 +1,3 @@
-import React from "react"
-
 export const LanguageData = [
     {
         german: {
@@ -16,17 +14,17 @@ export const LanguageData = [
             contactcontent: "Ihnen Fragen"
         },
         english: {
-            headerwork:"",
-            headerabout: "",
-            headerblog: "",
-            headercontact: "",
-            workttl: "",
-            worktxt:"",
-            abouttxt: "",
-            contactttl: "",
-            contactname: "",
-            contactemail: "",
-            contactcontent: ""
+            headerwork:"my work",
+            headerabout: "about me",
+            headerblog: "blog",
+            headercontact: "contact",
+            workttl: "my work",
+            worktxt:"There are portfolio which i made",
+            abouttxt: "wellcome! thank you for wacthing my website. i`m tkg. nice to meet you",
+            contactttl: "contact",
+            contactname: "your name",
+            contactemail: "your email",
+            contactcontent: "your question"
         },
         japanese: {
             headerwork:"わたしの作品",
