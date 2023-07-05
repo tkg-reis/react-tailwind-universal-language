@@ -3,12 +3,12 @@ import { useContext } from 'react'
 import { Languages } from '../App'
 
 const Form = () => {
-    const val = useContext(Languages);
+    const { german, english , japanese } = useContext(Languages);
     return (
         <>
             <form action="" className='flex flex-col justify-center items-center pb-8'>
                 <label htmlFor="name">
-                    {/* {`${val[0]}.contactname`} */}
+                    {`${german}`}
                 </label>
                 <input type="text" name="name" id="name" />
                 <label htmlFor="email">
