@@ -3,11 +3,11 @@ import MyImg from '../public/my_picture_02.jpg'
 
 const Person = () => {
   return (
-    <div>
-        <div className='w-72 h-72'>
-            <img src={MyImg} alt="" className='rounded-full sm:w-1/6 lg:w-full shadow-2xl'/>
-        </div>
-    </div>
+    <>
+      <div className='rounded-full overflow-hidden max-w-lg lg:w-1/4'>
+          <img src={MyImg} alt="" className='shadow-2xl flex justify-center items-center' />
+      </div>
+    </>
   )
 }
 

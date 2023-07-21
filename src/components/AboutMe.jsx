@@ -1,16 +1,21 @@
 import React from 'react'
 import Person from './Person'
 import { UeberMich } from './SectionTtl'
+import Flex from './Flex'
+import PersonInfo from './PersonInfo'
 
-const ueberMich = () => {
+const AboutMe = () => {
   return (
     <>
-      <div className='flex justify-around items-center mt-20'>
-        <Person/>
+      <div className='mx-auto w-11/12'>
         <UeberMich/>
+        <Flex>
+          <PersonInfo/>
+          <Person/>
+        </Flex>
       </div>
     </>
   )
 }
 
-export default ueberMich
+export default AboutMe

@@ -1,49 +1,58 @@
-import React from 'react'
+// import React from 'react'
 import WorkIcon from '@mui/icons-material/Work';
-import Face6Icon from '@mui/icons-material/Face6';
 import EmailIcon from '@mui/icons-material/Email';
-import { LanguageData } from '../lib/languageData';
+import PersonIcon from '@mui/icons-material/Person';
+// import { LanguageData } from '../lib/languageData';
+import React, { useContext } from 'react';
+import LanguageContext from '../lib/LanguageContext';
 
 const WerkTxt = () => {
+    const { languageData } = useContext(LanguageContext);
     return (
         <>
             <div className='flex justify-center flex-col items-center py-8'>
-                <div className='flex gap-6'>
-                    <WorkIcon style={{ fontSize: "2rem" }}/>
-                    <h2>hallo</h2>
+                <div className='flex items-center flex-col gap-6'>
+                    <div className='flex items-center gap-3 mt-4'>
+                        <WorkIcon style={{ fontSize: "2rem" }}/>
+                        <h2 className='text-white'>
+                            {languageData.workttl}
+                        </h2>
+                    </div>
+                        <p className='text-white'>
+                            {languageData.worktxt}  
+                        </p>
                 </div>
-                    <p>hallo welt</p>
             </div>
         </>
     )
 }
 
 const UeberMich = () => {
+    const { languageData } = useContext(LanguageContext);
+
     return(
         <>
-            <div className='bg-gray-200/30 backdrop-blur-lg border border-gray-200/30 shadow-lg px-6 py-2   '>
-                    <Face6Icon style={{ fontSize: "2rem" }}/>
-                    <h1 className="text-xl">
-                        tkg_web_making
-                    </h1>
-                    <p className="mt-5">
-                        Willkommen!
-                        <br />
-                        Vielen dank für mein Webseite sehen <br /> 
-                        Ich bin tkg. Schön, Sie kennenzulernen
-                    </p>
+            <div className='flex items-center gap-6 justify-center mt-6'>
+                <PersonIcon style={{ fontSize: "2rem" }} />
+                <h2 className='text-white'>
+                    {languageData.aboutttl}
+                </h2>
             </div>
         </>
     )
 }
 
 const KontaktTxt = () => {
+    const { languageData } = useContext(LanguageContext);
+
     return(
         <>
             <div className='flex justify-center items-center mt-8'>
-                <div className='flex gap-6'>
+                <div className='flex gap-6 items-center'>
                     <EmailIcon style={{ fontSize: "2rem" }}/>
-                    <h2>Kontkt</h2>
+                    <h2 className='text-white'>
+                        {languageData.contactttl}
+                    </h2>
                 </div>
             </div>
         </>
