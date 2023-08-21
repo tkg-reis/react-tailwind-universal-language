@@ -4,19 +4,20 @@ import LanguageContext from "./LanguageContext";
 export const LanguageData = [
     {
         german: {
-            headerwork:"Mein Werke",
+            headerwork:"Meine Werke",
             headerabout: "Über mich",
             headerblog: "Blog",
             headercontact: "Kontakt",
-            workttl: "Mein Werke",
+            workttl: "Meine Werke",
             worktxt:"Diese Werke ist von mir gemacht.",
             aboutttl: "Über mich",
-            abouttxt: "Willkommen Vielen dank für mein Webseite sehen. Ich bin tkg. Schön, Sie kennenzulernen",
+            abouttxt: "Willkommen! Vielen dank für mein Webseite sehen. Ich bin tkg. Schön, Sie kennenzulernen.",
             contactttl: "kontakt",
             contactname: "Ihnen Name",
             contactemail: "Ihnen Email",
             contactcontent: "Ihnen Fragen",
-            contactsubmit: "Senden"
+            contactsubmit: "Senden",
+            privacyPolicy: "Sie stimmen Privatsphäre Politik zu."
         },
         english: {
             headerwork:"My work",
@@ -24,14 +25,15 @@ export const LanguageData = [
             headerblog: "Blog",
             headercontact: "Contact",
             workttl: "My work",
-            worktxt:"There are portfolio which i made",
+            worktxt:"There are portfolio which I made.",
             aboutttl: "About me",
-            abouttxt: "Wellcome! thank you for wacthing my website. I`m tkg. nice to meet you",
+            abouttxt: "Wellcome! thank you for wacthing my website. I`m tkg. Nice to meet you",
             contactttl: "Contact",
             contactname: "Your name",
             contactemail: "Your email",
             contactcontent: "Your question",
-            contactsubmit: "Send"
+            contactsubmit: "Send",
+            privacyPolicy: "You agree privacy policy."
         },
         japanese: {
             headerwork:"わたしの作品",
@@ -39,14 +41,15 @@ export const LanguageData = [
             headerblog: "ブログへ",
             headercontact: "お問い合わせ",
             workttl: "私の作品",
-            worktxt:"これらの作品は私の作成物です",
+            worktxt:"これらの作品は私の作品です。",
             aboutttl: "私について",
-            abouttxt: "ようこそ!私のウェブサイトを見て頂きありがとうございます。私はTKGと申します。よろしくお願いします。",
+            abouttxt: "ようこそ！ 私のウェブサイトを見て頂きありがとうございます。私はTKGと申します。よろしくお願いします。",
             contactttl: "お問い合わせ",
             contactname: "お名前",
             contactemail: "メール",
             contactcontent: "お問い合わせ内容",
-            contactsubmit: "送信"
+            contactsubmit: "送信",
+            privacyPolicy: "プライバシーポリシーに同意する。"
         }
     }
 ];

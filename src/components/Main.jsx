@@ -7,7 +7,7 @@ const Main = ({ children }) => {
     return (
         <main rounded-full="true" fl="true" className='bg-gradient-to-r from-cyan-500 to-blue-500 '>
             {children}
-            <Work/>
+            <Work />
             <AboutMe/>
             <Contact/>
         </main>

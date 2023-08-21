@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import LanguageContext from '../lib/LanguageContext';
+import AnchorLink from "react-anchor-link-smooth-scroll";
+
 
 const nav = () => {
 
@@ -21,24 +23,24 @@ const nav = () => {
             <ul className='flex whitespace-nowrap text-xs font-bold lg:text-2xl'>
 
                 <li className='ml-2 mr-5 hover:text-black hover:opacity-80 duration-200'>
-                    <a href="#work">
+                    <AnchorLink href="#work">
                         {languageData.headerwork}
-                    </a>
+                    </AnchorLink>
                 </li>
                 <li className='mr-5 hover:text-black duration-200'>
-                    <a href="#about">
+                    <AnchorLink href="#about">
                         {languageData.headerabout}
-                    </a>
+                    </AnchorLink>
                 </li>
                 <li className='mr-5 hover:text-black duration-200'>
-                    <a href="https://takaki-masataka-web02.work/news">
+                    <AnchorLink href="https://takaki-masataka-web02.work/news">
                         {languageData.headerblog}
-                    </a>
+                    </AnchorLink>
                 </li>
                 <li className='mr-5 hover:text-black duration-200'>
-                    <a href="/">
+                    <AnchorLink href="#contact">
                         {languageData.headercontact}
-                    </a>
+                    </AnchorLink>
                 </li>
                 {/* <li>
                     {LANGS.map(_lang => {
